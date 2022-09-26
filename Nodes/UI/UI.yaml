@@ -355,6 +355,17 @@ Children:
       Type: BaseDataVariableType
       DataType: Double
       Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Type: DataBind
+        DataType: NodePath
+        Value: "{NodeId:ns=7;g=b9e198e0-8392-9e21-bae7-aae6d4f4ff51}"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DataBindModeType
+          ModellingRule: Optional
+          Value: 2
     - Name: MinLevel
       Type: BaseDataVariableType
       DataType: Double
