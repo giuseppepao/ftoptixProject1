@@ -1,0 +1,266 @@
+Name: NewFolder1
+Type: FolderType
+Children:
+- Name: TubeFillIndicator
+  Id: g=f42d09b52b614b6dbf75c59e8f00d89d
+  Supertype: ScaleLayout
+  ReferenceType: HasComponent
+  Children:
+  - Name: FillColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#0071bc"
+  - Name: LevelColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#29abe2"
+  - Name: Level
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: MinLevel
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: MaxLevel
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: TubeColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#f2f2f2"
+  - Name: TickMarkOpacity
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 100.0
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 15.770000457763672
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 67.83399963378906
+  - Name: Tube_x5F_Fill_x5F_Indicator_x5F_Outline
+    Type: Image
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.770000457763672
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 67.83399963378906
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=7;%PROJECTDIR%/res/Tube_x5F_Fill_x5F_Indicator_x5F_Outline.svg"
+  - Name: Tube
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=7;%PROJECTDIR%/res/TubeFillIndicator_Tube.svg"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.770000457763672
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 67.83399963378906
+    - Name: DynamicColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#f2f2f2"
+      Children:
+      - Name: DynamicLink
+        Type: DataBind
+        DataType: NodePath
+        Value: "../../TubeColor"
+  - Name: TubeFillIndicator_levelpe
+    Type: LinearGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 70.0
+      Children:
+      - Name: DynamicLink
+        Type: DataBind
+        DataType: NodePath
+        Value: "../../Level"
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Type: DataBind
+        DataType: NodePath
+        Value: "../../MinLevel"
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+      Children:
+      - Name: DynamicLink
+        Type: DataBind
+        DataType: NodePath
+        Value: "../../MaxLevel"
+    - Name: WarningZones
+      Type: BaseObjectType
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 4.288000106811523
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 62.37799835205078
+    - Name: MajorTickCount
+      Type: BaseDataVariableType
+      DataType: Float
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: Orientation
+      Type: BaseDataVariableType
+      DataType: OrientationEnum
+      ModellingRule: Optional
+      Value: 1
+    - Name: ImagePath
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      ModellingRule: Optional
+      Value: "ns=7;%PROJECTDIR%/res/TubeFillIndicator_LinearGauge_levelpe.svg"
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#29abe2"
+      Children:
+      - Name: DynamicLink
+        Type: DataBind
+        DataType: NodePath
+        Value: "../../LevelColor"
+    - Name: ValueChangeBehaviour
+      Type: BaseDataVariableType
+      DataType: ValueChangeBehaviour
+      ModellingRule: Optional
+      Value: 1
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 5.741000175476074
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 2.865000009536743
+  - Name: TickMarks
+    Type: Image
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.770000457763672
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 67.83399963378906
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=7;%PROJECTDIR%/res/TickMarks.svg"
+    - Name: Opacity
+      Type: BaseVariableType
+      DataType: Float
+      Value: 100.0
+      Children:
+      - Name: DynamicLink
+        Type: DataBind
+        DataType: NodePath
+        Value: "../../TickMarkOpacity"
+  - Name: Tube_x5F_Fill_x5F_Indicator_x5F_Tube_x5F_Overlay
+    Type: Image
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.770000457763672
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 67.83399963378906
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=7;%PROJECTDIR%/res/Tube_x5F_Fill_x5F_Indicator_x5F_Tube_x5F_Overlay.svg"
+  - Name: Fill
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=7;%PROJECTDIR%/res/TubeFillIndicator_Fill.svg"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.770000457763672
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 67.83399963378906
+    - Name: DynamicColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#0071bc"
+      Children:
+      - Name: DynamicLink
+        Type: DataBind
+        DataType: NodePath
+        Value: "../../FillColor"
+  - Name: Tube_x5F_Fill_x5F_Indicator_x5F_Overlay
+    Type: Image
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.770000457763672
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 67.83399963378906
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=7;%PROJECTDIR%/res/Tube_x5F_Fill_x5F_Indicator_x5F_Overlay.svg"
+  - Name: OriginalWidth
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 15.770000457763672
+  - Name: OriginalHeight
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 67.83399963378906
